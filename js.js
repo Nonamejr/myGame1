@@ -32,7 +32,7 @@ var answer = [];
 for (var i = 0; i < word.length; i++) {
     answer[i] = "_";
 };
-
+var h = 0
 var remeingLetters = word.length;
 var hod = 5
 while(remeingLetters > 0) {
@@ -55,7 +55,7 @@ while(remeingLetters > 0) {
             if (word[j] === guess) {
                 answer[j] = guess;
                 remeingLetters--
-            }
+            } 
         } 
     }   
 };
