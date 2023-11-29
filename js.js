@@ -32,7 +32,7 @@ var answer = [];
 for (var i = 0; i < word.length; i++) {
     answer[i] = "_";
 };
-
+var h = 0
 var remeingLetters = word.length;
 var hod = 5
 while(remeingLetters > 0) {
@@ -55,18 +55,13 @@ while(remeingLetters > 0) {
             if (word[j] === guess) {
                 answer[j] = guess;
                 remeingLetters--
-
-            }
-        }
-    }
-    console.log(answer)
-    console.log(guess)
-
-    if (guess == answer) {
-        alert(answer.join(""));
-        alert("Отлично! ты победил, было загадано слово: " + word)
-    }
+            } 
+        } 
+    }   
 };
 
+if (remeingLetters === 0) {
+    alert("Отлично! ты победил, было загадано слово: " + word)
+}
 
 }
